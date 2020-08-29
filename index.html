@@ -6,8 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Code Quiz</title>
-        <link rel="stylesheet" href="C:\Users\12673\desktop\homework\Code-Quiz\style.css">
-        <script src="C:\Users\12673\desktop\homework\Code-Quiz\script.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+      
     </head>
 </head>
 <body>
@@ -15,5 +16,16 @@
    <div class="quizContainer">
        <div id="quiz" class="quiz-group"></div>
    </div> 
+   <!-- <p><a href="highscore.html">View Highscore</a></p> -->
+
+   <div class="card" id="startscreen">
+       <h1> Title of Quiz</h1>
+       <button class="btn btn-primary" id="start">Begin!</button>
+   </div>
+   <div class="card hide" id="quizscreen">
+    <h1 id="question-title"> Question One </h1>
+    <div id="choice-buttons"></div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
