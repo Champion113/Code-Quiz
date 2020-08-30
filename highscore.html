@@ -12,10 +12,37 @@
     </head>
 </head>
 <body>
+    <div class="score" id="endscreen">
     <H1>Highscores</H1>
     <a href="index.html" class="button">Go Back</a>
     <a href="index.html" class="button">Clear Highscores</a>
 
+    <div class="clearfix">
+        <div class="card">
+          <h2>Sign Up</h2>
+          <form method="POST">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="janedoe@mail.com"
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="supersecure123"
+              />
+            </div>
+            <div id="msg"></div>
+            <button id="sign-up">Sign Up</button>
+          </form>
+        </div>
     <script src="script.js"></script>
     
 </body>
