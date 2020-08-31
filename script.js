@@ -97,8 +97,53 @@ function buildCard() {
 
 
 function questionClick() {
-    console.log(this.value);
+ //   console.log(this.value);
     //evaluate with an if statement if the click is right or wrong
     //add one to our index++
     //call buildcard()
 }
+
+var timerEl = document.getElementById('countdown');
+var mainEl = document.getElementById('main');
+var startBtn = document.getElementById('start');
+
+//var Score = 
+//var words = score.split(' ');
+
+// Timer Start at 40 sec
+function countdown() {
+  var timeLeft = 40;
+
+  //Function called every 1000 milliseconds
+  var timeInterval = setInterval(function() {
+      console.log("testing")
+    if (timeLeft > 1) {
+      timerEl.textContent = timeLeft + ' seconds remaining';
+      timeLeft--;
+    } else if (timeLeft === 1) {
+      timerEl.textContent = timeLeft + ' second remaining';
+      timeLeft--;
+    } else {
+      timerEl.textContent = '';
+      clearInterval(timeInterval);
+      displayScore();
+    }
+  }, 1000);
+}
+
+// Displays Score end quiz
+function displayScore() {
+  var wordCount = 0;
+
+  // Uses the `setInterval()` method to call a function to be executed every 300 milliseconds
+//   var scoreInterval = setInterval(function() {
+//     if (words[wordCount] === undefined) {
+//       clearInterval(scoreInterval);
+//     } else {
+//       mainEl.textContent = words[wordCount];
+//       wordCount++;
+//     }
+//   }, 300);
+}
+
+startBtn.onclick = countdown;
