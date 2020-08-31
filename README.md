@@ -12,5 +12,8 @@ Score page
 .Show score
 .Save initials with score
 .Take quiz again button
+<<<<<<< HEAD
 
 <img src="C:\Users\12673\Desktop\Homework\Code-Quiz\quiz-screenshot.jpg" alt="QuizPhoto">
+=======
+>>>>>>> 4926ed4382338ff1132fed396874815dc38438ea
