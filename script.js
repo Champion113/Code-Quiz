@@ -25,6 +25,33 @@ var questions = [
         answer: "=)"
     }
 ]
+var questions = [
+    {
+        question: "What method changes the HTML content in Javascript?",
+        choices: ["getElementById()", "function()", "Alert(Change HTML)","None of above"],
+        answer: "getElemenyById()"
+    }, 
+    {
+        question: "Define Event.prevent",
+        choices: ["To prevent event element", "Stop the brower from reloading the page upon a form submission", "Start brower to reload","None of above"],
+        answer: "Stop the brower from reloading the page upon a form submission"
+    }, 
+    {
+        question: "Which of the following can be used to make the console display data as a Javascript object?",
+        choices: ["Console.dir[]", "Console.dir = ", "Console.dir()","None of above"],
+        answer: "Console.dir()"
+    }, 
+    {
+        question: "How can you comment in Javascript?",
+        choices: ["<!--Comment-->", "'Comment", "//Comment","None of above"],
+        answer: "//Comment"
+    }, 
+    {
+        question: "Which operator is used to assign a value to a variable?",
+        choices: ["=", "*", "-","None of above"],
+        answer: "=)"
+    }
+]
 
 index = 0;
 	
@@ -75,4 +102,3 @@ function questionClick() {
     //add one to our index++
     //call buildcard()
 }
-

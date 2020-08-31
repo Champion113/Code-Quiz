@@ -6,7 +6,7 @@
 }
 
 
-   
+/*Start page*/  
 .button {
     background-color: yellow;
     border: none;
@@ -36,6 +36,7 @@
     text-align: center;
 
  }
+ /*Score Page*/
  .score {
     margin: auto;
     width: 100%;
@@ -45,18 +46,17 @@
  }
  
  button {
-    margin: auto;
-     background-color: rgb(212, 88, 88);
+   margin: auto;
+   background-color: rgb(212, 88, 88);
    text-align: center;
    color: white;
    width: 300px;
-  padding: 50px;
-  margin: 20px;
-  font-size: 20px;
+   padding: 50px;
+   margin: 20px;
+   font-size: 20px;
  }
  
  button:hover {
     background-color:yellow;
   }
 
-  
