@@ -37,28 +37,53 @@ startBtn.addEventListener("click", function(){
 })
 
 function buildCard() {
-    var currentQuestion = questions[index]
-    var questionTitle = document.getElementById("question-title");
-    var choiceButtons = document.getElementById("choice-buttons");
+    if(currentquestion[currentQuestion]){
+    var currentQuestion = questions[index];
+    document.getElementById("question").textContent= question.question;
+    answer.innerHTML ="";
+    for (var i = 0; 1 < question.choices.length); 1++; {
+         var newItem = document.createElement("li");
+         newItem.textContent = question.choices[1];
+         answer.appendChild(newItem);
+         newItem.addEventListener("click", choiceBtn)
+    // }    var questionTitle = document.getElementById("question-title");
+    // var choiceButtons = document.getElementById("choice-buttons");
 
-    questionTitle.textContent = currentQuestion.question;
+    // questionTitle.textContent = currentQuestion.question;
 
-    currentQuestion.choices.forEach(function(choice){
-        var choiceBtn = document.createElement("button");
-        choiceBtn.setAttribute("value", choice);
+    // currentQuestion.choices.forEach(function(choice){
+    //     var choiceBtn = document.createElement("button");
+    //     choiceBtn.setAttribute("value", choice);
 
-        choiceBtn.textContent = choice;
-        choiceBtn.onclick = questionClick;
+    //     choiceBtn.textContent = choice;
+    //     choiceBtn.onclick = questionClick;
 
-        choiceButtons.appendChild(choiceBtn)
+    //     choiceButtons.appendChild(choiceBtn)
 
 
-    })
+    }
 }
 
 function questionClick() {
-    console.log(this.value);
+    answer.innerHtml ="";
+    var question = question[currentQuestion];
+    var lastQuestion = questions[4]
+    if (questions[currentQuestion]){
+        var response = document.createElement("");
+    }
+    if (question.answer === this.textContent) {
+        response.textContent = "Correct";
+    } else {
+        response.textContent = "Wrong";
+        timeLeft =timeLeft - 10;
+    }
+    SpeechRecognitionResult.appendChild(resonse);
+    currentQuestion++;
+}
+    buildCard();
+    //console.log(this.value);//
     //evaluate with an if statement if the click is right or wrong
     //add one to our index++
     //call buildcard()
 }
+
